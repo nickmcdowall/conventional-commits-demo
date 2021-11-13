@@ -10,3 +10,6 @@ For specification see: https://www.conventionalcommits.org/en/v1.0.0/
 * Install node
   * `nvm install node` 
 * Created account in npm registry
+  * https://www.npmjs.com/
+* Create GITHUB_TOKEN variable
+  * containing a personal token with push access
