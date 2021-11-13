@@ -1,11 +1,6 @@
 {
   "name": "conventional-commits-demo",
-  "version": "1.0.1",
-  "description": "For specification see: https://www.conventionalcommits.org/en/v1.0.0/",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Demo automated release versioning and changelogs",
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
@@ -17,9 +12,6 @@
     "type": "git",
     "url": "git+https://github.com/nickmcdowall/conventional-commits-demo.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/nickmcdowall/conventional-commits-demo/issues"
   },
