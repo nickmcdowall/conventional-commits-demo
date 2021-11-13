@@ -1,8 +1,15 @@
 
+# Conventional Commits Demo
+[![GitHub release](https://img.shields.io/github/release/nickmcdowall/conventional-commits-demo)](https://github.com/nickmcdowall/conventional-commits-demo/releases)
+[![semantic-release](https://img.shields.io/badge/semantic-release-e10079.svg?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
+Demonstration project (non node) that uses the conventional commits specification along with the semantic-release tool
+to automate release versioning and release notes based on the git commit messages.
 
 ## Conventional Commits
-For specification see: https://www.conventionalcommits.org/en/v1.0.0/
+For git message specification see: https://www.conventionalcommits.org/en/v1.0.0/
+
+For node plugin that does the work see: https://github.com/semantic-release/semantic-release
 
 ## Steps
 * Install nvm
@@ -17,4 +24,5 @@ For specification see: https://www.conventionalcommits.org/en/v1.0.0/
 
 TODO
 * Add Github action to automate the release versioning etc.
+  * Needs to run something like `npx semantic-release` (locally I needed to override the dry-run mode with `--no-ci`)
 * Test when integrated with maven central releasing
