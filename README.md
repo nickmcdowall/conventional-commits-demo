@@ -21,6 +21,8 @@ For node plugin that does the work see: https://github.com/semantic-release/sema
   * `nvm install node` 
 * Create `GITHUB_TOKEN` variable
   * containing a personal token with push access to the repo so that the tags and release (with changelog) can be auto-generated
+* Run semantic-release (`--no-ci` flag avoids dry-run when running localy):
+  * ` npx semantic-release --no-ci`
 
 ### Run via Github Action
 * Add an action in the workflows directory that uses the semantic-release action
