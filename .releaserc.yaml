@@ -1,0 +1,12 @@
+# For an example see: https://github.com/GeekHomeInside/semantic-release-example/blob/master/.releaserc.yaml
+branches: [ "master" ]
+plugins:
+  - "@semantic-release/commit-analyzer"
+  - "@semantic-release/release-notes-generator"
+  - "@semantic-release/changelog"
+  - "@semantic-release/git"
+  - "@semantic-release/github"
+prepare:
+  - path: "@semantic-release/git"
+  - path: "@semantic-release/changelog"
+    changelogFile: "docs/CHANGELOG.md"
