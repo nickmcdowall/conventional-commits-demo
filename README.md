@@ -2,6 +2,7 @@
 # Conventional Commits Demo
 [![GitHub release](https://img.shields.io/github/release/nickmcdowall/conventional-commits-demo)](https://github.com/nickmcdowall/conventional-commits-demo/releases)
 [![semantic-release](https://img.shields.io/badge/semantic-release-e10079.svg?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+[![Automated Release](https://github.com/nickmcdowall/conventional-commits-demo/actions/workflows/release.yml/badge.svg)](https://github.com/nickmcdowall/conventional-commits-demo/actions/workflows/release.yml)
 
 Demonstration project (non node) that uses the conventional commits specification along with the semantic-release tool
 to automate release versioning and release notes based on the git commit messages.
