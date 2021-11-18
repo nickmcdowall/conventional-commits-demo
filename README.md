@@ -14,3 +14,4 @@ A project that uses the [semantic-release](https://github.com/semantic-release/s
 ## Files of interest
 * [release.yml](.github/workflows/release.yml) : The github workflow file (needs to include additional plugins used in the `.releaserc.yaml` file )
 * [.releaserc.yaml](.releaserc.yaml) : The configuration file for semantic-release
+
