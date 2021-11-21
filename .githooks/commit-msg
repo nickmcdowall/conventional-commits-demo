@@ -1,5 +1,12 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
+#
+# This hook checks the commit message header only to ensure that the expected format is used
+#
+# Changes with breaking changes should include BREAKING CHANGE in the commit body (this is not validated by this hook since
+#  we can't know whether a change is breaking or not but rely on the user including the `BREAKING CHANGE` keywords.
+# 
+ 
 commit_regex='^((build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([a-zA-Z0-9 /_,.-]+?\))?: .{1,79}\w|Merge branch .+|(fixup|squash)! .+)$'
 
 error_msg='
@@ -17,12 +24,12 @@ Examples:
   docs: Add instructions to README
 ----------------------------------------------------
 Accepted Types:
-  fix       - for fixes (creates PATCH release)
-  feat      - for features (creates MINOR release)
-  docs      - for documentation changes
   build     - for changes that affect the build or external dependencies
-  ci        - for changes related to the ci pipeline
   chore     - for general maintenance changes
+  ci        - for changes related to the ci pipeline
+  docs      - for documentation changes
+  feat      - for features [* triggers a MINOR release when pushed]
+  fix       - for fixes [* triggers a PATCH release when pushed]
   perf      - for performance related changes
   refactor  - for refactoring
   revert    - for revert commits
